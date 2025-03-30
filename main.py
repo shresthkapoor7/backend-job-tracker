@@ -28,7 +28,7 @@ def parse_job(url: str = Query(...), api_key: str = Query(...)):
 
         # Step 2: Gemini config
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-pro")
+        model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
 
         # Step 3: Prompt
         prompt = f"""
