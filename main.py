@@ -39,6 +39,7 @@ def parse_job(url: str = Query(...), api_key: str = Query(...)):
         Expected format:
         {{
           "company": "Company Name",
+          "role": "Job Title",
           "skills": ["Skill 1", "Skill 2", "..."],
           "deadline": "Application Deadline or 'Not specified'"
         }}
